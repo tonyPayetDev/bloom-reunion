@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BLOOM Réunion - Le salon du mariage fun & classe à La Réunion. Domaine des Mille Cocos, Saint-Pierre. Prestataires, défilés, dégustations, soirée VIP.">
+  <title>BLOOM Réunion | Le Salon du Mariage Fun & Classe</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- === NAVIGATION === -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logos/bloom-logo-alt.png" alt="Bloom Réunion" style="height: 45px;">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="billetterie.html">Billetterie</a>
+        <a href="prestataires.html">Prestataires</a>
+        <a href="blooming-day.html">Blooming Day</a>
+        <a href="apropos.html">À Propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="billetterie.html" class="nav-cta">Réserver</a>
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- === HERO === -->
+  <section class="hero" style="background: linear-gradient(rgba(32,43,45,0.55), rgba(32,43,45,0.65)), url('images/accueil/hero-main.jpeg') center/cover no-repeat;">
+    <div class="hero-bg" style="background: transparent;"></div>
+    <div class="hero-particles"></div>
+    <div class="hero-content">
+      <img src="images/logos/bloom-logo-alt.png" alt="Wedding Bloom" style="height: 120px; margin: 0 auto 1.5rem; display: block; filter: brightness(0) invert(1);">
+      <div class="hero-badge">
+        <i class="fas fa-gem"></i>
+        Édition 2026 &mdash; La Réunion
+      </div>
+      <h1>
+        Le 1<sup>er</sup> RDV d'un Mariage<br>
+        <span class="accent">& d'une Fête d'Exception</span>
+      </h1>
+      <p class="tagline">Fun, Classe & Inoubliable</p>
+      <p class="description">
+        Vivez une expérience unique au cœur du Domaine des Mille Cocos.
+        Rencontrez les meilleurs prestataires, assistez à des défilés époustouflants
+        et laissez-vous inspirer pour le plus beau jour de votre vie.
+      </p>
+      <div class="hero-buttons">
+        <a href="billetterie.html" class="btn btn-gold btn-lg">
+          <i class="fas fa-ticket-alt"></i> Réserver mes places
+        </a>
+        <a href="#programme" class="btn btn-outline btn-lg">
+          <i class="fas fa-calendar-alt"></i> Voir le programme
+        </a>
+      </div>
+      <div class="hero-info">
+        <div class="hero-info-item">
+          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="info-text">
+            <span class="info-label">Lieu</span>
+            <span class="info-value">Domaine des Mille Cocos</span>
+          </div>
+        </div>
+        <div class="hero-info-item">
+          <div class="icon"><i class="fas fa-calendar"></i></div>
+          <div class="info-text">
+            <span class="info-label">Date</span>
+            <span class="info-value">10 &amp; 11 Mai 2026</span>
+          </div>
+        </div>
+        <div class="hero-info-item">
+          <div class="icon"><i class="fas fa-users"></i></div>
+          <div class="info-text">
+            <span class="info-label">Prestataires</span>
+            <span class="info-value">+50 exposants</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Découvrir</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- === COUNTDOWN === -->
+  <section class="countdown-section">
+    <div class="container">
+      <div class="countdown-wrapper">
+        <span class="countdown-label">L'événement commence dans</span>
+        <div class="countdown" id="countdown"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === HIGHLIGHTS === -->
+  <section class="section" id="highlights">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Pourquoi Bloom ?</span>
+        <h2>Une expérience unique</h2>
+        <div class="divider"></div>
+        <p>Bloom Réunion, c'est bien plus qu'un salon du mariage. C'est une immersion dans l'univers du rêve et de l'élégance.</p>
+      </div>
+      <div class="highlights-grid stagger-children">
+        <div class="highlight-card">
+          <div class="icon"><i class="fas fa-star"></i></div>
+          <h3>Prestataires d'Exception</h3>
+          <p>Plus de 50 professionnels triés sur le volet pour faire de votre mariage un moment parfait.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="icon"><i class="fas fa-tshirt"></i></div>
+          <h3>Défilés de Mode</h3>
+          <p>Robes de mariée, costumes et accessoires présentés dans des shows spectaculaires.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="icon"><i class="fas fa-utensils"></i></div>
+          <h3>Dégustations</h3>
+          <p>Savourez les créations de nos traiteurs et pâtissiers pour trouver votre menu idéal.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="icon"><i class="fas fa-glass-cheers"></i></div>
+          <h3>Soirée VIP</h3>
+          <p>Une soirée de gala exclusive avec chef renommé, cocktails et shows glamour.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === PROGRAMME === -->
+  <section class="section section-dark" id="programme">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Le Programme</span>
+        <h2>Deux jours d'exception</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="programme-tabs reveal">
+        <button class="programme-tab active" data-tab="samedi">
+          <i class="fas fa-sun"></i> Samedi 10 Mai
+        </button>
+        <button class="programme-tab" data-tab="dimanche">
+          <i class="fas fa-sun"></i> Dimanche 11 Mai
+        </button>
+        <button class="programme-tab" data-tab="vip">
+          <i class="fas fa-crown"></i> Soirée VIP
+        </button>
+      </div>
+
+      <!-- Samedi -->
+      <div class="programme-content active" id="samedi">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="time">10h00</div>
+            <div class="event-info">
+              <h4>Ouverture des Portes</h4>
+              <p>Accueil des visiteurs et remise du guide des exposants</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">11h00</div>
+            <div class="event-info">
+              <h4>Premier Défilé de Mode</h4>
+              <p>Présentation des dernières collections de robes de mariée</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">13h00</div>
+            <div class="event-info">
+              <h4>Ateliers & Dégustations</h4>
+              <p>Traiteurs, pâtissiers et mixologues vous font découvrir leurs créations</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">15h00</div>
+            <div class="event-info">
+              <h4>Shows & Animations</h4>
+              <p>Musique live, démonstrations de danse et ateliers DIY</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">17h00</div>
+            <div class="event-info">
+              <h4>Grand Défilé du Soir</h4>
+              <p>Le show phare avec les tenues les plus spectaculaires</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">19h00</div>
+            <div class="event-info">
+              <h4>Soirée VIP</h4>
+              <p>Cocktail dînatoire, DJ set et ambiance glamour (sur invitation)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dimanche -->
+      <div class="programme-content" id="dimanche">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="time">10h00</div>
+            <div class="event-info">
+              <h4>Ouverture des Portes</h4>
+              <p>Accueil et visite libre des stands</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">11h30</div>
+            <div class="event-info">
+              <h4>Conférences Mariage</h4>
+              <p>Conseils de wedding planners et experts en organisation</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">14h00</div>
+            <div class="event-info">
+              <h4>Défilé de l'Après-midi</h4>
+              <p>Collections de robes et costumes pour tous les styles</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">16h00</div>
+            <div class="event-info">
+              <h4>The Blooming Day</h4>
+              <p>L'expérience immersive signature de Bloom Réunion</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">18h00</div>
+            <div class="event-info">
+              <h4>Tirage au Sort & Clôture</h4>
+              <p>Des lots exceptionnels à gagner pour les futurs mariés</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIP -->
+      <div class="programme-content" id="vip">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="time">19h00</div>
+            <div class="event-info">
+              <h4>Cocktail de Bienvenue</h4>
+              <p>Accueil champagne et amuse-bouches par notre chef</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">20h00</div>
+            <div class="event-info">
+              <h4>Dîner Gastronomique</h4>
+              <p>Menu 4 services préparé par un chef renommé de La Réunion</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">21h30</div>
+            <div class="event-info">
+              <h4>Show Glamour</h4>
+              <p>Spectacle exclusif avec performances artistiques</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">22h00</div>
+            <div class="event-info">
+              <h4>DJ Set & Dancefloor</h4>
+              <p>Ambiance festive avec cocktails signature par nos mixologues</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === BILLETTERIE PREVIEW === -->
+  <section class="section" id="billetterie-preview">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Billetterie</span>
+        <h2>Réservez vos places</h2>
+        <div class="divider"></div>
+        <p>Choisissez la formule qui vous correspond et vivez l'expérience Bloom.</p>
+      </div>
+      <div class="tickets-grid stagger-children">
+        <!-- Samedi -->
+        <div class="ticket-card">
+          <div class="ticket-header">
+            <div class="ticket-icon"><i class="fas fa-sun"></i></div>
+            <h3>Samedi</h3>
+            <p class="ticket-date">10 Mai 2026 &bull; 10h - 23h</p>
+          </div>
+          <div class="ticket-price">
+            <span class="currency">€</span><span class="amount">8</span><span class="per">/pers.</span>
+          </div>
+          <div class="ticket-body">
+            <ul class="ticket-features">
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Accès salon + stands</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Défilés de mode</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Dégustations offertes</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Animations & ateliers</li>
+            </ul>
+            <button class="btn btn-gold" data-booking="samedi" data-price="8.20" data-name="Billet Samedi 10 Mai">
+              <i class="fas fa-ticket-alt"></i> Réserver
+            </button>
+          </div>
+        </div>
+
+        <!-- Pass 2 Jours -->
+        <div class="ticket-card featured">
+          <span class="ticket-badge">Populaire</span>
+          <div class="ticket-header">
+            <div class="ticket-icon"><i class="fas fa-crown"></i></div>
+            <h3>Pass 2 Jours</h3>
+            <p class="ticket-date">10 &amp; 11 Mai 2026</p>
+          </div>
+          <div class="ticket-price">
+            <span class="currency">€</span><span class="amount">15</span><span class="per">/pers.</span>
+          </div>
+          <div class="ticket-body">
+            <ul class="ticket-features">
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Accès 2 jours complets</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Tous les défilés</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Dégustations offertes</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Goody bag offert</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Accès prioritaire</li>
+            </ul>
+            <button class="btn btn-gold" data-booking="pass2j" data-price="15.38" data-name="Pass 2 Jours (10 & 11 Mai)">
+              <i class="fas fa-ticket-alt"></i> Réserver
+            </button>
+          </div>
+        </div>
+
+        <!-- Dimanche -->
+        <div class="ticket-card">
+          <div class="ticket-header">
+            <div class="ticket-icon"><i class="fas fa-sun"></i></div>
+            <h3>Dimanche</h3>
+            <p class="ticket-date">11 Mai 2026 &bull; 10h - 19h</p>
+          </div>
+          <div class="ticket-price">
+            <span class="currency">€</span><span class="amount">8</span><span class="per">/pers.</span>
+          </div>
+          <div class="ticket-body">
+            <ul class="ticket-features">
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Accès salon + stands</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Défilés de mode</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Blooming Day expérience</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Tirage au sort</li>
+            </ul>
+            <button class="btn btn-gold" data-booking="dimanche" data-price="8.20" data-name="Billet Dimanche 11 Mai">
+              <i class="fas fa-ticket-alt"></i> Réserver
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === VIP SECTION === -->
+  <section class="vip-section" id="vip-section">
+    <div class="container">
+      <div class="vip-content">
+        <div class="vip-text reveal-left">
+          <span class="subtitle" style="color: var(--gold-light); font-family: 'Cormorant Garamond', serif; font-style: italic; letter-spacing: 3px; text-transform: uppercase;">Expérience Exclusive</span>
+          <h2>Soirée VIP</h2>
+          <div class="gold-line"></div>
+          <p>
+            Une soirée de gala exceptionnelle orchestrée par un chef renommé et des maîtres
+            en mixologie. Des dégustations, des shows glamour pour une soirée magique
+            au cœur du Domaine des Mille Cocos.
+          </p>
+          <div class="vip-features">
+            <div class="vip-feature">
+              <span class="icon"><i class="fas fa-utensils"></i></span>
+              <span>Chef renommé</span>
+            </div>
+            <div class="vip-feature">
+              <span class="icon"><i class="fas fa-cocktail"></i></span>
+              <span>Cocktails signature</span>
+            </div>
+            <div class="vip-feature">
+              <span class="icon"><i class="fas fa-music"></i></span>
+              <span>DJ & Live music</span>
+            </div>
+            <div class="vip-feature">
+              <span class="icon"><i class="fas fa-star"></i></span>
+              <span>Shows glamour</span>
+            </div>
+          </div>
+          <button class="btn btn-gold btn-lg" data-booking="vip" data-price="45.00" data-name="Soirée VIP - Samedi 10 Mai">
+            <i class="fas fa-gem"></i> Réserver la soirée VIP
+          </button>
+        </div>
+        <div class="vip-image-wrapper reveal-right">
+          <div class="vip-img" style="background: linear-gradient(135deg, rgba(232,60,130,0.2), rgba(32,43,45,0.4)), url('images/blooming-day/hero-1.jpg') center/cover; width: 100%; height: 450px; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);"></div>
+          <div class="vip-price-tag">
+            <span class="price">45 €</span>
+            <span class="label">par personne</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === TEMOIGNAGES === -->
+  <section class="section section-blush">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Témoignages</span>
+        <h2>Ils ont vécu l'expérience Bloom</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="testimonials-slider reveal">
+        <div class="testimonial-card">
+          <div class="quote">
+            Un salon exceptionnel ! On a trouvé notre traiteur, notre photographe et notre DJ en un seul week-end. L'ambiance était incroyable, entre élégance et bonne humeur.
+          </div>
+          <div class="author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #D4A0A0, #F2D4D4);"></div>
+            <div>
+              <div class="author-name">Marie & Thomas</div>
+              <div class="author-role">Mariés en Décembre 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FAQ === -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Questions fréquentes</span>
+        <h2>Tout savoir sur Bloom</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question">
+            Où se déroule le salon Bloom Réunion ?
+            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Le salon se déroule au Domaine des Mille Cocos, situé au 12 Impasse de la Ferme, Saint-Pierre 97410, La Réunion. Un cadre magnifique entouré de cocotiers et de champs de canne à sucre.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Les enfants sont-ils les bienvenus ?
+            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Oui, les enfants de moins de 12 ans entrent gratuitement accompagnés d'un adulte. Un espace enfants avec des animations sera disponible pendant toute la durée du salon.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Y a-t-il un parking sur place ?
+            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Oui, le Domaine des Mille Cocos dispose d'un grand parking gratuit pouvant accueillir plusieurs centaines de véhicules.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Peut-on acheter les billets sur place ?
+            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Oui, une billetterie sera disponible à l'entrée le jour de l'événement. Cependant, nous vous recommandons de réserver en ligne pour bénéficier d'un accès prioritaire et éviter l'attente.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Comment accéder à la soirée VIP ?
+            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              La soirée VIP est accessible uniquement sur réservation. Un billet VIP spécial est disponible dans notre billetterie en ligne. Les places sont limitées, ne tardez pas à réserver !
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === CTA FINAL === -->
+  <section class="section section-dark" style="padding: 4rem 0;">
+    <div class="container text-center">
+      <div class="reveal">
+        <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Prêt(e) à vivre l'expérience Bloom ?</h2>
+        <p class="elegant-text" style="font-size: 1.3rem; color: var(--gold-light); margin-bottom: 2rem; font-style: italic;">
+          Réservez vos places dès maintenant et préparez le plus beau jour de votre vie.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="billetterie.html" class="btn btn-gold btn-lg">
+            <i class="fas fa-ticket-alt"></i> Réserver maintenant
+          </a>
+          <a href="contact.html" class="btn btn-outline btn-lg">
+            <i class="fas fa-envelope"></i> Nous contacter
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === BOOKING MODAL === -->
+  <div class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Réservation</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="booking-summary">
+          <div class="summary-row">
+            <span>Billet</span>
+            <span id="booking-name">-</span>
+          </div>
+          <div class="summary-row">
+            <span>Prix unitaire</span>
+            <span id="booking-price">-</span>
+          </div>
+        </div>
+
+        <label style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.8rem;">Nombre de places</label>
+        <div class="quantity-selector">
+          <button class="quantity-btn qty-minus" type="button">&minus;</button>
+          <span class="quantity-value">1</span>
+          <button class="quantity-btn qty-plus" type="button">+</button>
+        </div>
+
+        <div class="booking-summary" style="margin-bottom: 1.5rem;">
+          <div class="summary-row summary-total">
+            <span>Total</span>
+            <span id="booking-total">-</span>
+          </div>
+        </div>
+
+        <form id="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Prénom</label>
+              <input type="text" name="firstName" required placeholder="Votre prénom">
+            </div>
+            <div class="form-group">
+              <label>Nom</label>
+              <input type="text" name="lastName" required placeholder="Votre nom">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" required placeholder="votre@email.com">
+          </div>
+          <div class="form-group">
+            <label>Téléphone</label>
+            <input type="tel" name="phone" required placeholder="0692 XX XX XX">
+          </div>
+          <button type="submit" class="btn btn-gold" style="width: 100%; justify-content: center;">
+            <i class="fas fa-lock"></i> Confirmer la réservation
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logos/bloom-logo-alt.png" alt="Bloom Réunion" style="height: 50px; margin-bottom: 1rem; filter: brightness(0) invert(1);">
+          <p>Le 1<sup>er</sup> RDV d'un Mariage & d'une Fête d'exception à La Réunion. Une expérience unique au Domaine des Mille Cocos, Saint-Pierre.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="billetterie.html">Billetterie</a></li>
+            <li><a href="prestataires.html">Prestataires</a></li>
+            <li><a href="blooming-day.html">Blooming Day</a></li>
+            <li><a href="apropos.html">À Propos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informations</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">CGV</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem;">Recevez en avant-première les infos sur Bloom Réunion.</p>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="Votre email">
+            <button class="btn btn-gold" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+              S'inscrire
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bloom Réunion. Tous droits réservés.</span>
+        <span>Fait avec <span style="color: var(--rose);">&hearts;</span> à La Réunion</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez l'équipe Bloom Réunion. Téléphone, email, adresse et formulaire de contact pour toute question sur le salon du mariage.">
+  <title>Contact | BLOOM Réunion</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- === NAVIGATION === -->
+  <nav class="navbar scrolled">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logos/bloom-logo-alt.png" alt="Bloom Réunion" style="height: 40px;">
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="billetterie.html">Billetterie</a>
+        <a href="prestataires.html">Prestataires</a>
+        <a href="blooming-day.html">Blooming Day</a>
+        <a href="apropos.html">À Propos</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="billetterie.html" class="nav-cta">Réserver</a>
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- === PAGE HERO === -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-envelope"></i>
+        Parlons de votre projet
+      </div>
+      <h1><span style="color: var(--gold);">Contactez</span>-nous</h1>
+      <p style="color: rgba(255,255,255,0.6); max-width: 500px; margin: 0 auto;">
+        Une question sur le salon, la billetterie ou un stand exposant ? Notre équipe vous répond avec plaisir.
+      </p>
+      <p class="breadcrumb" style="margin-top: 1.5rem;">
+        <a href="index.html">Accueil</a> &nbsp;/&nbsp; Contact
+      </p>
+    </div>
+  </section>
+
+  <!-- === CONTACT === -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Formulaire -->
+        <div class="reveal-left">
+          <div class="contact-form">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Envoyez-nous un message</h3>
+            <p style="color: var(--text-light); margin-bottom: 2rem; font-size: 0.95rem;">
+              Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.
+            </p>
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Prénom *</label>
+                  <input type="text" name="firstName" required placeholder="Votre prénom">
+                </div>
+                <div class="form-group">
+                  <label>Nom *</label>
+                  <input type="text" name="lastName" required placeholder="Votre nom">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Email *</label>
+                <input type="email" name="email" required placeholder="votre@email.com">
+              </div>
+              <div class="form-group">
+                <label>Téléphone</label>
+                <input type="tel" name="phone" placeholder="0692 XX XX XX">
+              </div>
+              <div class="form-group">
+                <label>Sujet *</label>
+                <select name="subject" required>
+                  <option value="" disabled selected>Choisissez un sujet</option>
+                  <option value="billetterie">Question sur la billetterie</option>
+                  <option value="exposant">Devenir exposant / prestataire</option>
+                  <option value="vip">Soirée VIP</option>
+                  <option value="partenariat">Partenariat & sponsoring</option>
+                  <option value="presse">Presse & média</option>
+                  <option value="autre">Autre demande</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Message *</label>
+                <textarea name="message" required placeholder="Décrivez votre demande..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-gold btn-lg" style="width: 100%; justify-content: center;">
+                <i class="fas fa-paper-plane"></i> Envoyer le message
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Infos -->
+        <div class="reveal-right">
+          <div class="contact-info-cards">
+            <div class="contact-card">
+              <div class="card-icon"><i class="fas fa-map-marker-alt" style="color: var(--gold);"></i></div>
+              <div>
+                <h4>Adresse de l'événement</h4>
+                <p>Domaine des Mille Cocos<br>12 Impasse de la Ferme<br>97410 Saint-Pierre, La Réunion</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="card-icon"><i class="fas fa-phone" style="color: var(--gold);"></i></div>
+              <div>
+                <h4>Téléphone</h4>
+                <p><a href="tel:0692176779">0692 17 67 79</a></p>
+                <p style="font-size: 0.85rem;">Du lundi au vendredi, 9h - 18h</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="card-icon"><i class="fas fa-envelope" style="color: var(--gold);"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:contact@le-bloom-event.com">contact@le-bloom-event.com</a></p>
+                <p style="font-size: 0.85rem;">Réponse sous 24-48h</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="card-icon"><i class="fas fa-clock" style="color: var(--gold);"></i></div>
+              <div>
+                <h4>Horaires du salon</h4>
+                <p>Samedi 10 Mai : 10h - 23h<br>Dimanche 11 Mai : 10h - 19h</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="card-icon"><i class="fas fa-share-alt" style="color: var(--gold);"></i></div>
+              <div>
+                <h4>Réseaux sociaux</h4>
+                <div class="social-links" style="margin-top: 0.5rem;">
+                  <a href="#" class="social-link" style="background: rgba(26,26,46,0.05); border-color: rgba(26,26,46,0.1); color: var(--dark);" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-link" style="background: rgba(26,26,46,0.05); border-color: rgba(26,26,46,0.1); color: var(--dark);" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-link" style="background: rgba(26,26,46,0.05); border-color: rgba(26,26,46,0.1); color: var(--dark);" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="contact-map" style="margin-top: 1.5rem;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.5!2d55.48!3d-21.34!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDIwJzI0LjAiUyA1NcKwMjgnNDguMCJF!5e0!3m2!1sfr!2sre!4v1234567890"
+              width="100%"
+              height="250"
+              style="border:0; display: block;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Domaine des Mille Cocos">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FAQ RAPIDE === -->
+  <section class="section section-blush">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">FAQ</span>
+        <h2>Questions fréquentes</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question">
+            Comment obtenir mes billets après l'achat ?
+            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Après votre réservation, vous recevrez un email de confirmation avec votre e-billet au format PDF. Présentez-le (imprimé ou sur smartphone) à l'entrée le jour J.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Comment devenir exposant ?
+            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Remplissez le formulaire de contact ci-dessus en sélectionnant "Devenir exposant / prestataire" ou appelez-nous directement au 0692 17 67 79. Nous vous enverrons le dossier exposant avec les tarifs et les options de stands.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Est-ce que le salon est accessible aux personnes à mobilité réduite ?
+            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Oui, le Domaine des Mille Cocos est accessible aux personnes à mobilité réduite. Des aménagements sont prévus pour garantir un accès confortable à tous les espaces du salon.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logos/bloom-logo-alt.png" alt="Bloom Réunion" style="height: 50px; margin-bottom: 1rem; filter: brightness(0) invert(1);">
+          <p>Le 1<sup>er</sup> RDV d'un Mariage & d'une Fête d'exception à La Réunion. Domaine des Mille Cocos, Saint-Pierre.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="billetterie.html">Billetterie</a></li>
+            <li><a href="prestataires.html">Prestataires</a></li>
+            <li><a href="blooming-day.html">Blooming Day</a></li>
+            <li><a href="apropos.html">À Propos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informations</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">CGV</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem;">Recevez en avant-première les infos sur Bloom Réunion.</p>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="Votre email">
+            <button class="btn btn-gold" style="width: 100%; justify-content: center; margin-top: 0.5rem;">S'inscrire</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bloom Réunion. Tous droits réservés.</span>
+        <span>Fait avec <span style="color: var(--rose);">&hearts;</span> à La Réunion</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

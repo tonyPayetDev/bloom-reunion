@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez les prestataires du salon Bloom Réunion : traiteurs, photographes, fleuristes, DJs, wedding planners et plus encore.">
+  <title>Prestataires | BLOOM Réunion</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- === NAVIGATION === -->
+  <nav class="navbar scrolled">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logos/bloom-logo-alt.png" alt="Bloom Réunion" style="height: 40px;">
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="billetterie.html">Billetterie</a>
+        <a href="prestataires.html" class="active">Prestataires</a>
+        <a href="blooming-day.html">Blooming Day</a>
+        <a href="apropos.html">À Propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="billetterie.html" class="nav-cta">Réserver</a>
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- === PAGE HERO === -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-store"></i>
+        +50 Professionnels
+      </div>
+      <h1>Nos <span style="color: var(--gold);">Prestataires</span></h1>
+      <p style="color: rgba(255,255,255,0.6); max-width: 550px; margin: 0 auto;">
+        Les meilleurs professionnels du mariage à La Réunion réunis en un seul lieu pour vous accompagner.
+      </p>
+      <p class="breadcrumb" style="margin-top: 1.5rem;">
+        <a href="index.html">Accueil</a> &nbsp;/&nbsp; Prestataires
+      </p>
+    </div>
+  </section>
+
+  <!-- === PRESTATAIRES === -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Édition 2026</span>
+        <h2>Les professionnels du mariage</h2>
+        <div class="divider"></div>
+        <p>Chaque prestataire a été sélectionné avec soin pour vous offrir le meilleur.</p>
+      </div>
+
+      <!-- Filtres -->
+      <div class="prestataires-filter reveal">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="traiteur">Traiteurs</button>
+        <button class="filter-btn" data-filter="photo">Photo & Vidéo</button>
+        <button class="filter-btn" data-filter="decoration">Décoration</button>
+        <button class="filter-btn" data-filter="robe">Robes & Costumes</button>
+        <button class="filter-btn" data-filter="musique">Musique & DJ</button>
+        <button class="filter-btn" data-filter="beaute">Beauté</button>
+        <button class="filter-btn" data-filter="lieu">Lieux</button>
+        <button class="filter-btn" data-filter="fleuriste">Fleuristes</button>
+        <button class="filter-btn" data-filter="planner">Wedding Planners</button>
+      </div>
+
+      <!-- Grille prestataires -->
+      <div class="prestataires-grid stagger-children">
+
+        <!-- Traiteur 1 -->
+        <div class="prestataire-card" data-category="traiteur">
+          <div class="prestataire-image">
+            <img src="images/prestataires/prestataire-1.jpg" alt="Traiteur">
+            <span class="prestataire-category">Traiteur</span>
+          </div>
+          <div class="prestataire-info">
+            <h3>La Table Créole</h3>
+            <p>Cuisine créole revisitée et gastronomie fusion pour des réceptions d'exception.</p>
+            <div class="prestataire-tags">
+              <span class="prestataire-tag">Créole</span>
+              <span class="prestataire-tag">Gastronomique</span>
+              <span class="prestataire-tag">Cocktail</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 1 -->
+        <div class="prestataire-card" data-category="photo">
+          <div class="prestataire-image">
+            <img src="images/prestataires/prestataire-2.jpg" alt="Photo &amp; Vidéo">
+            <span class="prestataire-category">Photo & Vidéo</span>
+          </div>
+          <div class="prestataire-info">
+            <h3>Studio Lagon</h3>
+            <p>Photographe et vidéaste spécialisé dans les mariages tropicaux.</p>
+            <div class="prestataire-tags">
+              <span class="prestataire-tag">Photo</span>
+              <span class="prestataire-tag">Vidéo</span>
+              <span class="prestataire-tag">Drone</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Décoration -->
+        <div class="prestataire-card" data-category="decoration">
+          <div class="prestataire-image">
+            <img src="images/prestataires/prestataire-3.jpg" alt="Décoration">
+            <span class="prestataire-category">Décoration</span>
+          </div>
+          <div class="prestataire-info">
+            <h3>Bloom Déco</h3>
+            <p>Scénographies florales et décoration événementielle haut de gamme.</p>
+            <div class="prestataire-tags">
+              <span class="prestataire-tag">Floral</span>
+              <span class="prestataire-tag">Scénographie</span>
+              <span class="prestataire-tag">Sur-mesure</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Robe -->
+        <div class="prestataire-card" data-category="robe">
+          <div class="prestataire-image">
+            <img src="images/prestataires/prestataire-4.jpg" alt="Robes &amp; Costumes">
+            <span class="prestataire-category">Robes & Costumes</span>
+          </div>
+          <div class="prestataire-info">
+            <h3>Maison Élégance</h3>
+            <p>Robes de mariée sur-mesure, prêt-à-porter et costumes homme.</p>
+            <div class="prestataire-tags">
+              <span class="prestataire-tag">Sur-mesure</span>
+              <span class="prestataire-tag">Mariée</span>
+              <span class="prestataire-tag">Costumes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Musique -->
+        <div class="prestataire-card" data-category="musique">
+          <div class="prestataire-image">
+            <img src="images/prestataires/prestataire-5.jpg" alt="Musique &amp; DJ">
+            <span class="prestataire-category">Musique & DJ</span>
+          </div>
+          <div class="prestataire-info">
+            <h3>DJ Tropical Mix</h3>
+            <p>DJ professionnel, sonorisation et éclairage pour des soirées mémorables.</p>
+            <div class="prestataire-tags">
+              <span class="prestataire-tag">DJ</span>
+              <span class="prestataire-tag">Son & Lumière</span>
+              <span class="prestataire-tag">Live</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beauté -->
+        <div class="prestataire-card" data-category="beaute">
+          <div class="prestataire-image">
+            <img src="images/prestataires/prestataire-6.jpg" alt="Beauté">
+            <span class="prestataire-category">Beauté</span>
+          </div>
+          <div class="prestataire-info">
+            <h3>Beauty Island</h3>
+            <p>Maquillage, coiffure et soins pour la mariée et son cortège.</p>
+            <div class="prestataire-tags">
+              <span class="prestataire-tag">Maquillage</span>
+              <span class="prestataire-tag">Coiffure</span>
+              <span class="prestataire-tag">Soins</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lieu -->
+        <div class="prestataire-card" data-category="lieu">
+          <div class="prestataire-image">
+            <img src="images/accueil/hero-main.jpeg" alt="Domaine des Mille Cocos">
+            <span class="prestataire-category">Lieu de réception</span>
+          </div>
+          <div class="prestataire-info">
+            <h3>Domaine des Mille Cocos</h3>
+            <p>7 hectares de verdure tropicale, capacité 800 personnes. Le cadre rêvé.</p>
+            <div class="prestataire-tags">
+              <span class="prestataire-tag">Domaine</span>
+              <span class="prestataire-tag">Tropical</span>
+              <span class="prestataire-tag">800 pers.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fleuriste -->
+        <div class="prestataire-card" data-category="fleuriste">
+          <div class="prestataire-image" style="background: linear-gradient(135deg, #E8A0A0, #FFD4D4);">
+            <span class="prestataire-category">Fleuriste</span>
+          </div>
+          <div class="prestataire-info">
+            <h3>Fleurs des Îles</h3>
+            <p>Bouquets, compositions florales et décors végétaux tropicaux.</p>
+            <div class="prestataire-tags">
+              <span class="prestataire-tag">Bouquets</span>
+              <span class="prestataire-tag">Tropical</span>
+              <span class="prestataire-tag">Arches</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wedding Planner -->
+        <div class="prestataire-card" data-category="planner">
+          <div class="prestataire-image" style="background: linear-gradient(135deg, #C9A96E, #F0DFC0);">
+            <span class="prestataire-category">Wedding Planner</span>
+          </div>
+          <div class="prestataire-info">
+            <h3>L'Art du Oui</h3>
+            <p>Organisation complète ou coordination du jour J pour un mariage sans stress.</p>
+            <div class="prestataire-tags">
+              <span class="prestataire-tag">Full planning</span>
+              <span class="prestataire-tag">Jour J</span>
+              <span class="prestataire-tag">Coaching</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Traiteur 2 -->
+        <div class="prestataire-card" data-category="traiteur">
+          <div class="prestataire-image" style="background: linear-gradient(135deg, #D0C4A0, #F0E8D0);">
+            <span class="prestataire-category">Traiteur</span>
+          </div>
+          <div class="prestataire-info">
+            <h3>Chef Olivier</h3>
+            <p>Cuisine gastronomique française revisitée aux saveurs réunionnaises.</p>
+            <div class="prestataire-tags">
+              <span class="prestataire-tag">Gastronomique</span>
+              <span class="prestataire-tag">Français</span>
+              <span class="prestataire-tag">Traiteur</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pâtissier -->
+        <div class="prestataire-card" data-category="traiteur">
+          <div class="prestataire-image" style="background: linear-gradient(135deg, #F2C4D4, #FFE8F0);">
+            <span class="prestataire-category">Pâtisserie</span>
+          </div>
+          <div class="prestataire-info">
+            <h3>Sweet Paradise</h3>
+            <p>Pièces montées, wedding cakes et candy bars créatifs et raffinés.</p>
+            <div class="prestataire-tags">
+              <span class="prestataire-tag">Wedding cake</span>
+              <span class="prestataire-tag">Pièce montée</span>
+              <span class="prestataire-tag">Candy bar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="prestataire-card" data-category="photo">
+          <div class="prestataire-image" style="background: linear-gradient(135deg, #3A3A5C, #5A5A7C);">
+            <span class="prestataire-category">Photo & Vidéo</span>
+          </div>
+          <div class="prestataire-info">
+            <h3>Lumière Australe</h3>
+            <p>Reportage photo et film de mariage cinématographique.</p>
+            <div class="prestataire-tags">
+              <span class="prestataire-tag">Cinéma</span>
+              <span class="prestataire-tag">Reportage</span>
+              <span class="prestataire-tag">Album</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- === DEVENIR PRESTATAIRE === -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="about-grid" style="gap: 3rem;">
+        <div class="reveal-left">
+          <span style="color: var(--gold-light); font-family: 'Cormorant Garamond', serif; font-style: italic; letter-spacing: 3px; text-transform: uppercase; font-size: 1.1rem;">Professionnels</span>
+          <h2 style="font-size: 2.5rem; color: var(--white); margin: 1rem 0;">Devenez exposant</h2>
+          <div style="width: 60px; height: 3px; background: var(--gradient-gold); margin-bottom: 1.5rem;"></div>
+          <p style="color: rgba(255,255,255,0.7); font-size: 1.05rem; margin-bottom: 1rem; line-height: 1.8;">
+            Vous êtes un professionnel du mariage à La Réunion ? Rejoignez Bloom Réunion et présentez vos services à des centaines de futurs mariés.
+          </p>
+          <p style="color: rgba(255,255,255,0.7); font-size: 1.05rem; margin-bottom: 2rem; line-height: 1.8;">
+            Stand personnalisé, visibilité sur notre site et nos réseaux sociaux, et un public qualifié et passionné.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-gold">
+              <i class="fas fa-paper-plane"></i> Demander un stand
+            </a>
+            <a href="tel:0692176779" class="btn btn-outline">
+              <i class="fas fa-phone"></i> 0692 17 67 79
+            </a>
+          </div>
+        </div>
+        <div class="reveal-right" style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div class="highlight-card" style="text-align: left; display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem;">
+            <div class="icon" style="margin: 0; flex-shrink: 0;"><i class="fas fa-users"></i></div>
+            <div>
+              <h3 style="font-size: 1.1rem;">+2000 visiteurs</h3>
+              <p style="font-size: 0.9rem;">Des futurs mariés qualifiés et motivés</p>
+            </div>
+          </div>
+          <div class="highlight-card" style="text-align: left; display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem;">
+            <div class="icon" style="margin: 0; flex-shrink: 0;"><i class="fas fa-bullhorn"></i></div>
+            <div>
+              <h3 style="font-size: 1.1rem;">Visibilité maximale</h3>
+              <p style="font-size: 0.9rem;">Site web, réseaux sociaux et presse locale</p>
+            </div>
+          </div>
+          <div class="highlight-card" style="text-align: left; display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem;">
+            <div class="icon" style="margin: 0; flex-shrink: 0;"><i class="fas fa-handshake"></i></div>
+            <div>
+              <h3 style="font-size: 1.1rem;">Networking</h3>
+              <p style="font-size: 0.9rem;">Échangez avec les autres professionnels du secteur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logos/bloom-logo-alt.png" alt="Bloom Réunion" style="height: 50px; margin-bottom: 1rem; filter: brightness(0) invert(1);">
+          <p>Le 1<sup>er</sup> RDV d'un Mariage & d'une Fête d'exception à La Réunion. Domaine des Mille Cocos, Saint-Pierre.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="billetterie.html">Billetterie</a></li>
+            <li><a href="prestataires.html">Prestataires</a></li>
+            <li><a href="blooming-day.html">Blooming Day</a></li>
+            <li><a href="apropos.html">À Propos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informations</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">CGV</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem;">Recevez en avant-première les infos sur Bloom Réunion.</p>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="Votre email">
+            <button class="btn btn-gold" style="width: 100%; justify-content: center; margin-top: 0.5rem;">S'inscrire</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bloom Réunion. Tous droits réservés.</span>
+        <span>Fait avec <span style="color: var(--rose);">&hearts;</span> à La Réunion</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

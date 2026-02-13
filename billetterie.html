@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Billetterie Bloom Réunion - Réservez vos places pour le salon du mariage. Billets journée, pass 2 jours et soirée VIP.">
+  <title>Billetterie | BLOOM Réunion</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- === NAVIGATION === -->
+  <nav class="navbar scrolled">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logos/bloom-logo-alt.png" alt="Bloom Réunion" style="height: 40px;">
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="billetterie.html" class="active">Billetterie</a>
+        <a href="prestataires.html">Prestataires</a>
+        <a href="blooming-day.html">Blooming Day</a>
+        <a href="apropos.html">À Propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="billetterie.html" class="nav-cta">Réserver</a>
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- === PAGE HERO === -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-ticket-alt"></i>
+        Billetterie officielle
+      </div>
+      <h1>Réservez vos <span style="color: var(--gold);">Places</span></h1>
+      <p style="color: rgba(255,255,255,0.6); max-width: 500px; margin: 0 auto;">
+        Choisissez votre formule et vivez l'expérience Bloom Réunion au Domaine des Mille Cocos.
+      </p>
+      <p class="breadcrumb" style="margin-top: 1.5rem;">
+        <a href="index.html">Accueil</a> &nbsp;/&nbsp; Billetterie
+      </p>
+    </div>
+  </section>
+
+  <!-- === COUNTDOWN === -->
+  <section class="countdown-section">
+    <div class="container">
+      <div class="countdown-wrapper">
+        <span class="countdown-label">L'événement commence dans</span>
+        <div class="countdown" id="countdown"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === BILLETS JOURNÉE === -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Billets Journée</span>
+        <h2>Entrées au Salon</h2>
+        <div class="divider"></div>
+        <p>Accédez au salon, découvrez les stands, assistez aux défilés et profitez des dégustations.</p>
+      </div>
+      <div class="tickets-grid stagger-children">
+        <!-- Samedi -->
+        <div class="ticket-card">
+          <div class="ticket-header">
+            <div class="ticket-icon"><i class="fas fa-sun" style="color: var(--gold);"></i></div>
+            <h3>Samedi</h3>
+            <p class="ticket-date">10 Mai 2026 &bull; 10h - 23h</p>
+          </div>
+          <div class="ticket-price">
+            <span class="currency">€</span><span class="amount">8</span><span class="per">,20 /pers.</span>
+          </div>
+          <div class="ticket-body">
+            <ul class="ticket-features">
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Accès complet au salon</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> +50 prestataires</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Défilés de mode nuptiale</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Dégustations traiteurs</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Animations & ateliers DIY</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Musique live</li>
+            </ul>
+            <button class="btn btn-gold" data-booking="samedi" data-price="8.20" data-name="Billet Samedi 10 Mai 2026">
+              <i class="fas fa-ticket-alt"></i> Réserver
+            </button>
+          </div>
+        </div>
+
+        <!-- Pass 2 Jours -->
+        <div class="ticket-card featured">
+          <span class="ticket-badge"><i class="fas fa-star"></i> Meilleur choix</span>
+          <div class="ticket-header">
+            <div class="ticket-icon"><i class="fas fa-crown" style="color: var(--gold);"></i></div>
+            <h3>Pass 2 Jours</h3>
+            <p class="ticket-date">10 &amp; 11 Mai 2026</p>
+          </div>
+          <div class="ticket-price">
+            <span class="currency">€</span><span class="amount">15</span><span class="per">,38 /pers.</span>
+          </div>
+          <div class="ticket-body">
+            <ul class="ticket-features">
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Accès 2 jours complets</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> +50 prestataires</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Tous les défilés de mode</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Dégustations illimitées</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Accès Blooming Day</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Goody bag VIP offert</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Accès prioritaire</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Économisez 1,02 €</li>
+            </ul>
+            <button class="btn btn-gold" data-booking="pass2j" data-price="15.38" data-name="Pass 2 Jours (10 & 11 Mai 2026)">
+              <i class="fas fa-ticket-alt"></i> Réserver le Pass
+            </button>
+          </div>
+        </div>
+
+        <!-- Dimanche -->
+        <div class="ticket-card">
+          <div class="ticket-header">
+            <div class="ticket-icon"><i class="fas fa-sun" style="color: var(--gold);"></i></div>
+            <h3>Dimanche</h3>
+            <p class="ticket-date">11 Mai 2026 &bull; 10h - 19h</p>
+          </div>
+          <div class="ticket-price">
+            <span class="currency">€</span><span class="amount">8</span><span class="per">,20 /pers.</span>
+          </div>
+          <div class="ticket-body">
+            <ul class="ticket-features">
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Accès complet au salon</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> +50 prestataires</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Défilé de l'après-midi</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Blooming Day expérience</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Conférences mariage</li>
+              <li><span class="check"><i class="fas fa-check-circle"></i></span> Grand tirage au sort</li>
+            </ul>
+            <button class="btn btn-gold" data-booking="dimanche" data-price="8.20" data-name="Billet Dimanche 11 Mai 2026">
+              <i class="fas fa-ticket-alt"></i> Réserver
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === VIP === -->
+  <section class="vip-section">
+    <div class="container">
+      <div class="vip-content">
+        <div class="vip-text reveal-left">
+          <span class="subtitle" style="color: var(--gold-light); font-family: 'Cormorant Garamond', serif; font-style: italic; letter-spacing: 3px; text-transform: uppercase;">L'Expérience Ultime</span>
+          <h2>Soirée VIP</h2>
+          <div class="gold-line"></div>
+          <p>
+            Une soirée de gala exceptionnelle au cœur du Domaine des Mille Cocos.
+            Chef renommé, maîtres en mixologie, dégustations raffinées et shows glamour
+            pour une soirée tout simplement magique.
+          </p>
+          <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem;">
+            <i class="fas fa-calendar" style="color: var(--gold);"></i> &nbsp;Samedi 10 Mai 2026 &bull; 19h00 - 23h00<br>
+            <i class="fas fa-map-marker-alt" style="color: var(--gold);"></i> &nbsp;Domaine des Mille Cocos, Saint-Pierre
+          </p>
+          <div class="vip-features" style="margin-top: 1.5rem;">
+            <div class="vip-feature">
+              <span class="icon"><i class="fas fa-utensils"></i></span>
+              <span>Dîner gastronomique</span>
+            </div>
+            <div class="vip-feature">
+              <span class="icon"><i class="fas fa-cocktail"></i></span>
+              <span>Open bar cocktails</span>
+            </div>
+            <div class="vip-feature">
+              <span class="icon"><i class="fas fa-music"></i></span>
+              <span>DJ set & live</span>
+            </div>
+            <div class="vip-feature">
+              <span class="icon"><i class="fas fa-star"></i></span>
+              <span>Shows exclusifs</span>
+            </div>
+            <div class="vip-feature">
+              <span class="icon"><i class="fas fa-camera"></i></span>
+              <span>Photobooth</span>
+            </div>
+            <div class="vip-feature">
+              <span class="icon"><i class="fas fa-gift"></i></span>
+              <span>Cadeaux surprises</span>
+            </div>
+          </div>
+          <button class="btn btn-gold btn-lg" style="margin-top: 2rem;" data-booking="vip" data-price="45.00" data-name="Soirée VIP - Samedi 10 Mai 2026">
+            <i class="fas fa-gem"></i> Réserver la Soirée VIP &mdash; 45 €
+          </button>
+        </div>
+        <div class="vip-image-wrapper reveal-right">
+          <div style="background: linear-gradient(135deg, rgba(232,60,130,0.2), rgba(32,43,45,0.4)), url('images/blooming-day/gallery-1.jpg') center/cover; width: 100%; height: 450px; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);"></div>
+          <div class="vip-price-tag">
+            <span class="price">45 €</span>
+            <span class="label">par personne</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === INFOS PRATIQUES === -->
+  <section class="section section-blush">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Bon à savoir</span>
+        <h2>Informations pratiques</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="highlights-grid stagger-children" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="highlight-card">
+          <div class="icon"><i class="fas fa-child"></i></div>
+          <h3>Enfants gratuits</h3>
+          <p>Les enfants de moins de 12 ans entrent gratuitement accompagnés d'un adulte.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="icon"><i class="fas fa-car"></i></div>
+          <h3>Parking gratuit</h3>
+          <p>Grand parking sur place au Domaine des Mille Cocos, accès facile.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="icon"><i class="fas fa-undo-alt"></i></div>
+          <h3>Remboursement</h3>
+          <p>Billets remboursables jusqu'à 7 jours avant l'événement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === ZEFFY BILLETTERIE INTÉGRÉE === -->
+  <section class="section" id="zeffy-billetterie">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Paiement sécurisé</span>
+        <h2>Billetterie en ligne</h2>
+        <div class="divider"></div>
+        <p>Réservez et payez directement en ligne via notre plateforme sécurisée Zeffy. 100% de votre paiement va à l'événement.</p>
+      </div>
+      <div class="reveal" style="max-width: 800px; margin: 0 auto;">
+        <!--
+          =====================================================
+          INTÉGRATION ZEFFY - À CONFIGURER
+          =====================================================
+          Pour activer la billetterie Zeffy :
+          1. Créez un compte sur https://www.zeffy.com
+          2. Créez un événement "Bloom Réunion 2026"
+          3. Ajoutez vos types de billets :
+             - Samedi 10 Mai (8,20 €)
+             - Dimanche 11 Mai (8,20 €)
+             - Pass 2 Jours (15,38 €)
+             - Soirée VIP (45,00 €)
+          4. Allez dans Partager > Intégrer sur votre site
+          5. Copiez le code iframe et remplacez le bloc ci-dessous
+          =====================================================
+        -->
+        <div style="position: relative; overflow: hidden; width: 100%; min-height: 600px; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-medium);">
+          <!-- Remplacez VOTRE-ID-FORMULAIRE par l'ID fourni par Zeffy -->
+          <iframe
+            title="Billetterie Bloom Réunion - Zeffy"
+            style="position: absolute; border: 0; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%;"
+            src="https://www.zeffy.com/fr-CA/embed/ticketing/VOTRE-ID-FORMULAIRE"
+            allowpaymentrequest
+            allowtransparency="true">
+          </iframe>
+          <!-- Message temporaire avant configuration Zeffy -->
+          <div id="zeffy-placeholder" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 600px; text-align: center; padding: 3rem;">
+            <div style="font-size: 4rem; color: var(--pink); margin-bottom: 1.5rem;"><i class="fas fa-ticket-alt"></i></div>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">Billetterie Zeffy</h3>
+            <p style="color: var(--text-light); max-width: 400px; margin-bottom: 1.5rem;">
+              La billetterie en ligne sera bientôt disponible ici.<br>
+              En attendant, réservez vos places en nous contactant directement.
+            </p>
+            <a href="tel:0692176779" class="btn btn-gold">
+              <i class="fas fa-phone"></i> Appeler : 0692 17 67 79
+            </a>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <p style="font-size: 0.85rem; color: var(--text-light);">
+            <i class="fas fa-shield-alt" style="color: var(--teal);"></i>
+            Paiement 100% sécurisé via <strong>Zeffy</strong> &mdash; 0% de frais de plateforme
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === CTA === -->
+  <section class="section section-dark" style="padding: 4rem 0;">
+    <div class="container text-center reveal">
+      <h2 style="font-size: 2rem; margin-bottom: 1rem;">Une question sur la billetterie ?</h2>
+      <p style="color: rgba(255,255,255,0.6); margin-bottom: 1.5rem;">Notre équipe est disponible pour vous aider.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-gold">
+          <i class="fas fa-envelope"></i> Contactez-nous
+        </a>
+        <a href="tel:0692176779" class="btn btn-outline">
+          <i class="fas fa-phone"></i> 0692 17 67 79
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- === BOOKING MODAL === -->
+  <div class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Réservation</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="booking-summary">
+          <div class="summary-row">
+            <span>Billet</span>
+            <span id="booking-name">-</span>
+          </div>
+          <div class="summary-row">
+            <span>Prix unitaire</span>
+            <span id="booking-price">-</span>
+          </div>
+        </div>
+
+        <label style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.8rem;">Nombre de places</label>
+        <div class="quantity-selector">
+          <button class="quantity-btn qty-minus" type="button">&minus;</button>
+          <span class="quantity-value">1</span>
+          <button class="quantity-btn qty-plus" type="button">+</button>
+        </div>
+
+        <div class="booking-summary" style="margin-bottom: 1.5rem;">
+          <div class="summary-row summary-total">
+            <span>Total</span>
+            <span id="booking-total">-</span>
+          </div>
+        </div>
+
+        <form id="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Prénom</label>
+              <input type="text" name="firstName" required placeholder="Votre prénom">
+            </div>
+            <div class="form-group">
+              <label>Nom</label>
+              <input type="text" name="lastName" required placeholder="Votre nom">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" required placeholder="votre@email.com">
+          </div>
+          <div class="form-group">
+            <label>Téléphone</label>
+            <input type="tel" name="phone" required placeholder="0692 XX XX XX">
+          </div>
+          <button type="submit" class="btn btn-gold" style="width: 100%; justify-content: center;">
+            <i class="fas fa-lock"></i> Confirmer la réservation
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logos/bloom-logo-alt.png" alt="Bloom Réunion" style="height: 50px; margin-bottom: 1rem; filter: brightness(0) invert(1);">
+          <p>Le 1<sup>er</sup> RDV d'un Mariage & d'une Fête d'exception à La Réunion. Domaine des Mille Cocos, Saint-Pierre.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="billetterie.html">Billetterie</a></li>
+            <li><a href="prestataires.html">Prestataires</a></li>
+            <li><a href="blooming-day.html">Blooming Day</a></li>
+            <li><a href="apropos.html">À Propos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informations</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">CGV</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem;">Recevez en avant-première les infos sur Bloom Réunion.</p>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="Votre email">
+            <button class="btn btn-gold" style="width: 100%; justify-content: center; margin-top: 0.5rem;">S'inscrire</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bloom Réunion. Tous droits réservés.</span>
+        <span>Fait avec <span style="color: var(--rose);">&hearts;</span> à La Réunion</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
