@@ -237,58 +237,57 @@
     </div>
   </section>
 
-  <!-- === ZEFFY BILLETTERIE INTÉGRÉE === -->
-  <section class="section" id="zeffy-billetterie">
+  <!-- === BILLETTERIE EN LIGNE (Attendize + Stripe) === -->
+  <section class="section" id="billetterie-en-ligne">
     <div class="container">
       <div class="section-header reveal">
-        <span class="subtitle">Paiement sécurisé</span>
+        <span class="subtitle">Paiement sécurisé via Stripe</span>
         <h2>Billetterie en ligne</h2>
         <div class="divider"></div>
-        <p>Réservez et payez directement en ligne via notre plateforme sécurisée Zeffy. 100% de votre paiement va à l'événement.</p>
+        <p>Réservez et payez directement en ligne via notre plateforme sécurisée. Paiement par carte bancaire via Stripe.</p>
       </div>
-      <div class="reveal" style="max-width: 800px; margin: 0 auto;">
-        <!--
-          =====================================================
-          INTÉGRATION ZEFFY - À CONFIGURER
-          =====================================================
-          Pour activer la billetterie Zeffy :
-          1. Créez un compte sur https://www.zeffy.com
-          2. Créez un événement "Bloom Réunion 2026"
-          3. Ajoutez vos types de billets :
-             - Samedi 10 Mai (8,20 €)
-             - Dimanche 11 Mai (8,20 €)
-             - Pass 2 Jours (15,38 €)
-             - Soirée VIP (45,00 €)
-          4. Allez dans Partager > Intégrer sur votre site
-          5. Copiez le code iframe et remplacez le bloc ci-dessous
-          =====================================================
-        -->
-        <div style="position: relative; overflow: hidden; width: 100%; min-height: 600px; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-medium);">
-          <!-- Remplacez VOTRE-ID-FORMULAIRE par l'ID fourni par Zeffy -->
+      <div class="reveal" style="max-width: 900px; margin: 0 auto;">
+        <div style="position: relative; overflow: hidden; width: 100%; min-height: 700px; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-medium);">
+          <!--
+            =====================================================
+            INTÉGRATION ATTENDIZE
+            =====================================================
+            L'iframe ci-dessous pointe vers votre instance Attendize.
+            URL à mettre à jour une fois le domaine configuré dans Coolify :
+            - Service Coolify : bloom-attendize
+            - Domaine : billetterie.158.220.127.234.sslip.io
+            =====================================================
+          -->
           <iframe
-            title="Billetterie Bloom Réunion - Zeffy"
+            id="attendize-widget"
+            title="Billetterie Bloom Réunion"
             style="position: absolute; border: 0; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%;"
-            src="https://www.zeffy.com/fr-CA/embed/ticketing/VOTRE-ID-FORMULAIRE"
+            src="http://billetterie.158.220.127.234.sslip.io"
             allowpaymentrequest
             allowtransparency="true">
           </iframe>
-          <!-- Message temporaire avant configuration Zeffy -->
-          <div id="zeffy-placeholder" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 600px; text-align: center; padding: 3rem;">
+          <!-- Placeholder affiché si Attendize n'est pas encore configuré -->
+          <div id="attendize-placeholder" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 700px; text-align: center; padding: 3rem;">
             <div style="font-size: 4rem; color: var(--pink); margin-bottom: 1.5rem;"><i class="fas fa-ticket-alt"></i></div>
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">Billetterie Zeffy</h3>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">Billetterie en ligne</h3>
             <p style="color: var(--text-light); max-width: 400px; margin-bottom: 1.5rem;">
               La billetterie en ligne sera bientôt disponible ici.<br>
               En attendant, réservez vos places en nous contactant directement.
             </p>
-            <a href="tel:0692176779" class="btn btn-gold">
-              <i class="fas fa-phone"></i> Appeler : 0692 17 67 79
-            </a>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+              <a href="tel:0692176779" class="btn btn-gold">
+                <i class="fas fa-phone"></i> 0692 17 67 79
+              </a>
+              <a href="mailto:contact@le-bloom-event.com" class="btn btn-dark">
+                <i class="fas fa-envelope"></i> Email
+              </a>
+            </div>
           </div>
         </div>
         <div style="text-align: center; margin-top: 1.5rem;">
           <p style="font-size: 0.85rem; color: var(--text-light);">
             <i class="fas fa-shield-alt" style="color: var(--teal);"></i>
-            Paiement 100% sécurisé via <strong>Zeffy</strong> &mdash; 0% de frais de plateforme
+            Paiement 100% sécurisé via <strong>Stripe</strong> &mdash; Carte bancaire acceptée
           </p>
         </div>
       </div>
