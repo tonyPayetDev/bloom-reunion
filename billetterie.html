@@ -237,44 +237,52 @@
     </div>
   </section>
 
-  <!-- === BILLETTERIE EN LIGNE (Attendize + Stripe) === -->
+  <!-- === BILLETTERIE EN LIGNE (Hi.Events + Stripe) === -->
   <section class="section" id="billetterie-en-ligne">
     <div class="container">
       <div class="section-header reveal">
         <span class="subtitle">Paiement sécurisé via Stripe</span>
         <h2>Billetterie en ligne</h2>
         <div class="divider"></div>
-        <p>Réservez et payez directement en ligne via notre plateforme sécurisée. Paiement par carte bancaire via Stripe.</p>
+        <p>Réservez et payez directement en ligne. Paiement par carte bancaire via Stripe, 100% sécurisé.</p>
       </div>
-      <div class="reveal" style="max-width: 900px; margin: 0 auto;">
-        <div style="position: relative; overflow: hidden; width: 100%; min-height: 700px; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-medium);">
-          <!--
-            =====================================================
-            INTÉGRATION ATTENDIZE
-            =====================================================
-            L'iframe ci-dessous pointe vers votre instance Attendize.
-            URL à mettre à jour une fois le domaine configuré dans Coolify :
-            - Service Coolify : bloom-attendize
-            - Domaine : billetterie.158.220.127.234.sslip.io
-            =====================================================
-          -->
+      <div class="reveal" style="max-width: 960px; margin: 0 auto;">
+
+        <!-- CTA direct vers la billetterie Hi.Events -->
+        <div style="text-align: center; margin-bottom: 2.5rem;">
+          <a href="http://billetterie.158.220.127.234.sslip.io" target="_blank" rel="noopener"
+             class="btn btn-gold" style="font-size: 1.1rem; padding: 1rem 2.5rem;">
+            <i class="fas fa-ticket-alt"></i> &nbsp;Accéder à la billetterie
+          </a>
+          <p style="margin-top: 0.8rem; font-size: 0.85rem; color: var(--text-light);">
+            S'ouvre dans un nouvel onglet &mdash; Paiement sécurisé via Stripe
+          </p>
+        </div>
+
+        <!-- Iframe Hi.Events -->
+        <div style="position: relative; width: 100%; min-height: 750px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-medium);">
           <iframe
-            id="attendize-widget"
-            title="Billetterie Bloom Réunion"
-            style="position: absolute; border: 0; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%;"
+            id="hievents-widget"
+            title="Billetterie Bloom Réunion - Hi.Events"
+            style="position: absolute; border: 0; top: 0; left: 0; width: 100%; height: 100%;"
             src="http://billetterie.158.220.127.234.sslip.io"
             allowpaymentrequest
-            allowtransparency="true">
+            allow="payment">
           </iframe>
-          <!-- Placeholder affiché si Attendize n'est pas encore configuré -->
-          <div id="attendize-placeholder" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 700px; text-align: center; padding: 3rem;">
-            <div style="font-size: 4rem; color: var(--pink); margin-bottom: 1.5rem;"><i class="fas fa-ticket-alt"></i></div>
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">Billetterie en ligne</h3>
-            <p style="color: var(--text-light); max-width: 400px; margin-bottom: 1.5rem;">
-              La billetterie en ligne sera bientôt disponible ici.<br>
-              En attendant, réservez vos places en nous contactant directement.
+
+          <!-- Placeholder visible jusqu'à chargement de Hi.Events -->
+          <div id="hievents-placeholder" style="display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:750px; text-align:center; padding:3rem; background: linear-gradient(135deg, #fff5f8 0%, #fff 100%);">
+            <div style="font-size:3.5rem; color:var(--pink); margin-bottom:1.5rem;">
+              <i class="fas fa-ticket-alt"></i>
+            </div>
+            <h3 style="font-family:'Playfair Display',serif; font-size:1.8rem; margin-bottom:1rem; color:var(--dark);">
+              Billetterie en ligne
+            </h3>
+            <p style="color:var(--text-light); max-width:420px; line-height:1.7; margin-bottom:2rem;">
+              Notre billetterie en ligne est en cours de mise en place.<br>
+              En attendant, contactez-nous directement pour réserver vos places.
             </p>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+            <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; margin-bottom:2rem;">
               <a href="tel:0692176779" class="btn btn-gold">
                 <i class="fas fa-phone"></i> 0692 17 67 79
               </a>
@@ -282,12 +290,34 @@
                 <i class="fas fa-envelope"></i> Email
               </a>
             </div>
+            <!-- Tarifs rapides -->
+            <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
+              <div style="background:var(--white); border:2px solid var(--pink-light); border-radius:12px; padding:1rem 1.5rem; min-width:130px;">
+                <div style="font-size:0.75rem; color:var(--text-light); text-transform:uppercase; letter-spacing:1px;">Samedi</div>
+                <div style="font-size:1.5rem; font-weight:700; color:var(--pink);">8,20 €</div>
+              </div>
+              <div style="background:var(--white); border:2px solid var(--pink-light); border-radius:12px; padding:1rem 1.5rem; min-width:130px;">
+                <div style="font-size:0.75rem; color:var(--text-light); text-transform:uppercase; letter-spacing:1px;">Dimanche</div>
+                <div style="font-size:1.5rem; font-weight:700; color:var(--pink);">8,20 €</div>
+              </div>
+              <div style="background:var(--white); border:2px solid var(--pink-light); border-radius:12px; padding:1rem 1.5rem; min-width:130px;">
+                <div style="font-size:0.75rem; color:var(--text-light); text-transform:uppercase; letter-spacing:1px;">Pass 2 Jours</div>
+                <div style="font-size:1.5rem; font-weight:700; color:var(--pink);">15,38 €</div>
+              </div>
+              <div style="background:linear-gradient(135deg,#2d2d2d,#1a1a1a); border:2px solid #FFD700; border-radius:12px; padding:1rem 1.5rem; min-width:130px;">
+                <div style="font-size:0.75rem; color:#FFD700; text-transform:uppercase; letter-spacing:1px;">Soirée VIP</div>
+                <div style="font-size:1.5rem; font-weight:700; color:#FFD700;">Sur demande</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div style="text-align: center; margin-top: 1.5rem;">
-          <p style="font-size: 0.85rem; color: var(--text-light);">
-            <i class="fas fa-shield-alt" style="color: var(--teal);"></i>
-            Paiement 100% sécurisé via <strong>Stripe</strong> &mdash; Carte bancaire acceptée
+
+        <div style="text-align:center; margin-top:1.5rem;">
+          <p style="font-size:0.85rem; color:var(--text-light);">
+            <i class="fas fa-shield-alt" style="color:var(--teal);"></i>
+            Paiement 100% sécurisé via <strong>Stripe</strong> &mdash;
+            <i class="fas fa-child" style="color:var(--teal); margin-left:0.5rem;"></i>
+            Enfants de moins de 12 ans : entrée gratuite
           </p>
         </div>
       </div>
