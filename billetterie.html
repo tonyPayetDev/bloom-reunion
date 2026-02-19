@@ -7,6 +7,7 @@
   <title>Billetterie | BLOOM Réunion</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://billetterie.158.220.127.234.sslip.io/widget/script.js" defer></script>
 </head>
 <body>
 
@@ -259,57 +260,20 @@
           </p>
         </div>
 
-        <!-- Iframe Hi.Events -->
-        <div style="position: relative; width: 100%; min-height: 750px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-medium);">
-          <iframe
-            id="hievents-widget"
-            title="Billetterie Bloom Réunion - Hi.Events"
-            style="position: absolute; border: 0; top: 0; left: 0; width: 100%; height: 100%;"
-            src="https://billetterie.158.220.127.234.sslip.io"
-            allowpaymentrequest
-            allow="payment">
-          </iframe>
-
-          <!-- Placeholder visible jusqu'à chargement de Hi.Events -->
-          <div id="hievents-placeholder" style="display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:750px; text-align:center; padding:3rem; background: linear-gradient(135deg, #fff5f8 0%, #fff 100%);">
-            <div style="font-size:3.5rem; color:var(--pink); margin-bottom:1.5rem;">
-              <i class="fas fa-ticket-alt"></i>
-            </div>
-            <h3 style="font-family:'Playfair Display',serif; font-size:1.8rem; margin-bottom:1rem; color:var(--dark);">
-              Billetterie en ligne
-            </h3>
-            <p style="color:var(--text-light); max-width:420px; line-height:1.7; margin-bottom:2rem;">
-              Notre billetterie en ligne est en cours de mise en place.<br>
-              En attendant, contactez-nous directement pour réserver vos places.
-            </p>
-            <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; margin-bottom:2rem;">
-              <a href="tel:0692176779" class="btn btn-gold">
-                <i class="fas fa-phone"></i> 0692 17 67 79
-              </a>
-              <a href="mailto:contact@le-bloom-event.com" class="btn btn-dark">
-                <i class="fas fa-envelope"></i> Email
-              </a>
-            </div>
-            <!-- Tarifs rapides -->
-            <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
-              <div style="background:var(--white); border:2px solid var(--pink-light); border-radius:12px; padding:1rem 1.5rem; min-width:130px;">
-                <div style="font-size:0.75rem; color:var(--text-light); text-transform:uppercase; letter-spacing:1px;">Samedi</div>
-                <div style="font-size:1.5rem; font-weight:700; color:var(--pink);">8,20 €</div>
-              </div>
-              <div style="background:var(--white); border:2px solid var(--pink-light); border-radius:12px; padding:1rem 1.5rem; min-width:130px;">
-                <div style="font-size:0.75rem; color:var(--text-light); text-transform:uppercase; letter-spacing:1px;">Dimanche</div>
-                <div style="font-size:1.5rem; font-weight:700; color:var(--pink);">8,20 €</div>
-              </div>
-              <div style="background:var(--white); border:2px solid var(--pink-light); border-radius:12px; padding:1rem 1.5rem; min-width:130px;">
-                <div style="font-size:0.75rem; color:var(--text-light); text-transform:uppercase; letter-spacing:1px;">Pass 2 Jours</div>
-                <div style="font-size:1.5rem; font-weight:700; color:var(--pink);">15,38 €</div>
-              </div>
-              <div style="background:linear-gradient(135deg,#2d2d2d,#1a1a1a); border:2px solid #FFD700; border-radius:12px; padding:1rem 1.5rem; min-width:130px;">
-                <div style="font-size:0.75rem; color:#FFD700; text-transform:uppercase; letter-spacing:1px;">Soirée VIP</div>
-                <div style="font-size:1.5rem; font-weight:700; color:#FFD700;">Sur demande</div>
-              </div>
-            </div>
-          </div>
+        <!-- Widget Hi.Events -->
+        <div data-hievents-id="1"
+             data-hievents-primary-color="#991468ff"
+             data-hievents-primary-text-color="#000000"
+             data-hievents-secondary-color="#8b5cf6"
+             data-hievents-secondary-text-color="#ffffff"
+             data-hievents-background-color="#ffffff"
+             data-hievents-widget-type="widget"
+             data-hievents-widget-version="1.0"
+             data-hievents-locale="en"
+             data-hievents-padding="20px"
+             data-hievents-autoresize="true"
+             data-hievents-continue-button-text="Continuer"
+             class="hievents-widget">
         </div>
 
         <div style="text-align:center; margin-top:1.5rem;">
